@@ -14,7 +14,7 @@ public class Technozaure {
 	}
 
 	public boolean add(Person person) {
-		if (!person.employer().equals("Zenika") || person.jazz() <= 0 || capacity <= 0) {
+		if (!person.employer().equals("Zenika") || person.jazz() < 1 || capacity <= 0) {
 			return false;
 		}
 		set.add(person);
